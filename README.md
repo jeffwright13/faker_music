@@ -1,2 +1,2 @@
 # faker_music
-An add-on provider for the awesome Python module that provides random and/or fake data for music-related categories.
+An add-on provider for the Python Faker module to generate random and/or fake data for music-related categories.
