@@ -2,6 +2,7 @@ from faker.providers import BaseProvider
 from random import choice, choices, randint
 from genres import genre_list
 
+
 class MusicProvider(BaseProvider):
     """
     A Provider for music-related data.
@@ -17,5 +18,5 @@ class MusicProvider(BaseProvider):
         return g
 
     def genre_name(self):
-        g = choice(genre_list)
+        g = genre_object()
         return g["genre"]
