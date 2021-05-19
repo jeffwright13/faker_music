@@ -476,12 +476,14 @@ genre_list = [
     {
         "genre": "New Age",
         "subgenres": [
+            "Ambient",
             "Environmental",
             "Healing",
             "Meditation",
             "Nature",
             "Relaxation",
             "Travel",
+            "Yoga",
         ],
     },
     {"genre": "Opera", "subgenres": []},
