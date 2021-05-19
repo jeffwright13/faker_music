@@ -24,7 +24,7 @@ for line in data:
         # print(f"genre {genre} found")
         genre_list.append({"genre": genre, "subgenres": []})
         continue
-    if check8(line) == True:
+    if check8(line):
         subgenre = line.strip()
         subgenre = re.sub("\(.*?\)","", subgenre).strip()
         subgenre_list.append(subgenre)
