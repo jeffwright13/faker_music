@@ -1,13 +1,11 @@
-From: https://www.musicgenreslist.com/
-
     Alternative
         Art Punk
         Alternative Rock
         Britpunk
         College Rock
-        Crossover Thrash (thx Kevin G)
+        Crossover Thrash
         Crust Punk (thx Haug)
-        Emotional Hardcore (emo / emocore) – (Thanks Timothy)
+        Emotional Hardcore
         Experimental Rock
         Folk Punk
         Goth / Gothic Rock
@@ -15,13 +13,13 @@ From: https://www.musicgenreslist.com/
         Hardcore Punk
         Hard Rock
         Indie Rock
-        Lo-fi (hat tip to Ben Vee Bedlamite)
+        Lo-fi
         Musique Concrète
         New Wave
         Progressive Rock
         Punk
-        Shoegaze (with thx to Jackie Herrera)
-        Steampunk (with thx to Christopher Schaeffer)
+        Shoegaze
+        Steampunk
     Anime
     Blues
         Acoustic Blues
@@ -36,10 +34,10 @@ From: https://www.musicgenreslist.com/
         Contemporary Blues
         Contemporary R&B
         Country Blues
-        Dark Blues (thx Stephen)
+        Dark Blues
         Delta Blues
         Detroit Blues
-        Doom Blues (cheers Stephen)
+        Doom Blues
         Electric Blues
         Folk Blues
         Gospel Blues
@@ -272,7 +270,7 @@ From: https://www.musicgenreslist.com/
         Swing
     Electronic
         2-Step (thx Ran’dom Haug)
-        8bit – aka 8-bit, Bitpop and Chiptune – (thx Marcel Borchert)
+        8bit
         Ambient
             Ambient Dub
             Ambient House
