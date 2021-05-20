@@ -439,7 +439,7 @@ genre_list = [
             "Thrash Metal",
             "Power Metal",
             "Death Metal",
-            "Black Metall",
+            "Black Metal",
             "Pagan Metal",
             "Viking Metal",
             "Folk Metal",
