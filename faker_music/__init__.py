@@ -3,3 +3,8 @@
 __version__ = "0.1"
 
 from .music import MusicProvider
+
+
+__all__ = [
+    "MusicProvider",
+]
