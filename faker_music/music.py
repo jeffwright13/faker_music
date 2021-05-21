@@ -47,9 +47,9 @@ class MusicProvider(BaseProvider):
         """
         Returns a string representing a musical subgenre.
         """
-        g = choice(genre_list)
-        if len(g["subgenres"]) == 0:
-            s = music_subgenre()
-        else:
-            s = choice(g["subgenres"])
-        return s
+        while True:
+            g = choice(genre_list)
+            if len(g["subgenres"]) == 0:
+                continue
+            else:
+                return choice(g["subgenres"])
