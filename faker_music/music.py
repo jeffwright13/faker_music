@@ -18,27 +18,35 @@ class MusicProvider(BaseProvider):
     """
 
     def music_genre_object(self):
-        # Returns a randomly-chosen genre dictionary. This is a
-        # dictionary whose first key is 'genre', a string;
-        # and whose second key is 'subgenres', a list of strings.
-        #
-        # Example:
-        # {
-        #      "genre": "Metal",
-        #      "subgenres": [
-        #          "Black Metal",
-        #          "Goth Metal",
-        #          "Thrash Metal"
-        #      ]
-        # }
+        """
+        Returns a randomly-chosen genre dictionary. This is a
+        dictionary whose first key is 'genre', a string;
+        and whose second key is 'subgenres', a list of strings.
+
+        Example:
+        {
+             "genre": "Metal",
+             "subgenres": [
+                 "Black Metal",
+                 "Goth Metal",
+                 "Thrash Metal"
+             ]
+        }
+        """
         g = choice(genre_list)
         return g
 
     def music_genre(self):
+        """
+        Returns a string representing a musical genre.
+        """
         g = choice(genre_list)
         return g["genre"]
 
     def music_subgenre(self):
+        """
+        Returns a string representing a musical subgenre.
+        """
         g = choice(genre_list)
         if len(g["subgenres"]) == 0:
             s = music_subgenre()
