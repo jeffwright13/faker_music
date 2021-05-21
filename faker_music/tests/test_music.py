@@ -9,7 +9,7 @@ def test_music_genre_object():
     test_genre_obj = fake.music_genre_object()
     assert isinstance(test_genre_obj, dict)
     assert "genre" in test_genre_obj.keys()
-    assert "subgenre" in test_genre_obj.keys()
+    assert "subgenres" in test_genre_obj.keys()
 
 
 def test_music_genre():
