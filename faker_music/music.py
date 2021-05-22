@@ -1,6 +1,7 @@
 from faker.providers import BaseProvider
-from random import choice, choices, randint
+from random import choice
 from .genres import genre_list
+from .instruments import instrument_list
 
 
 class MusicProvider(BaseProvider):
@@ -53,3 +54,37 @@ class MusicProvider(BaseProvider):
                 continue
             else:
                 return choice(g["subgenres"])
+
+    def music_instrument_object(self):
+        """
+        Returns a randomly-chosen instrument dictionary. This is a
+        dictionary whose first key is 'classification', a string;
+        and whose second key, "instruments", refers to a list of
+        instruments in that category.
+
+        Example:
+        {
+             "classification": "electronics",
+             "instruments": [
+                 "Drum machine",
+                 "Electric piano",
+                 "Synthesizer"
+             ]
+        }
+        """
+        i = choice(instrument_list)
+        return i
+
+    def music_instrument(self):
+        """
+        Returns a musical instrument in string format.
+        """
+        i = choice(instrument_list)
+        return choice(i["instruments"])
+
+    def music_instrument_classification(self):
+        """
+        Returns a instrument classification in string format.
+        """
+        i = choice(instrument_list)
+        return i["classification"]

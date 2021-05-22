@@ -22,3 +22,22 @@ def test_music_subgenre():
     test_subgenre = fake.music_subgenre()
     assert isinstance(test_subgenre, str)
     assert len(test_subgenre) > 0
+
+
+def test_music_instrument_object():
+    test_instrument_obj = fake.music_instrument_object()
+    assert isinstance(test_instrument_obj, dict)
+    assert "classification" in test_instrument_obj.keys()
+    assert "instruments" in test_instrument_obj.keys()
+
+
+def test_music_instrument():
+    test_instrument = fake.music_instrument()
+    assert isinstance(test_instrument, str)
+    assert len(test_instrument) > 0
+
+
+def test_music_instrument_classification():
+    test_instrument_classification = fake.music_instrument_classification()
+    assert isinstance(test_instrument_classification, str)
+    assert len(test_instrument_classification) > 0
