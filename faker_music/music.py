@@ -1,5 +1,5 @@
-from faker.providers import BaseProvider
 from random import choice
+from faker.providers import BaseProvider
 from .genres import genre_list
 from .instruments import instrument_list
 
@@ -34,26 +34,24 @@ class MusicProvider(BaseProvider):
              ]
         }
         """
-        g = choice(genre_list)
-        return g
+        return choice(genre_list)
 
     def music_genre(self):
         """
         Returns a string representing a musical genre.
         """
-        g = choice(genre_list)
-        return g["genre"]
+        my_choice = choice(genre_list)
+        return my_choice["genre"]
 
     def music_subgenre(self):
         """
         Returns a string representing a musical subgenre.
         """
         while True:
-            g = choice(genre_list)
-            if len(g["subgenres"]) == 0:
+            my_choice = choice(genre_list)
+            if len(my_choice["subgenres"]) == 0:
                 continue
-            else:
-                return choice(g["subgenres"])
+            return choice(my_choice["subgenres"])
 
     def music_instrument_object(self):
         """
@@ -72,19 +70,18 @@ class MusicProvider(BaseProvider):
              ]
         }
         """
-        i = choice(instrument_list)
-        return i
+        return choice(instrument_list)
 
     def music_instrument(self):
         """
         Returns a musical instrument in string format.
         """
-        i = choice(instrument_list)
-        return choice(i["instruments"])
+        my_choice = choice(instrument_list)
+        return choice(my_choice["instruments"])
 
     def music_instrument_classification(self):
         """
         Returns a instrument classification in string format.
         """
-        i = choice(instrument_list)
-        return i["classification"]
+        my_choice = choice(instrument_list)
+        return my_choice["classification"]
