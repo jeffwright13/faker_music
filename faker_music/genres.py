@@ -1,4 +1,22 @@
-"""From: https://www.musicgenreslist.com/"""
+"""
+Raw data for faker_music module (music.py) to mine from.
+Data is presented in one big list of dicts, each dict
+corresponding to a "genre object":
+{
+    "genre": "<genre_name>",
+    "subgenres": [
+        "<subgenre1>",
+        "<subgenre2>",
+        "<subgenre3>",
+        ...
+    ]
+}
+
+This data was harvested on 2021-05-14, from 
+https://www.musicgenreslist.com/
+Author maintains code to format copy/pasted data;
+please ask for link to gist
+"""
 
 genre_list = [
     {

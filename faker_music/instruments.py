@@ -1,3 +1,23 @@
+"""
+Raw data for faker_music module (music.py) to mine from.
+Data is presented in one big list of dicts, each dict
+corresponding to a "instrument object":
+{
+    "classification": "<category>",
+    "instruments": [
+        "<instrument1>",
+        "<instrument2>",
+        "<instrument3>",
+        ...
+    ]
+}
+
+This data was harvested on 2021-05-20, from 
+https://en.wikipedia.org/wiki/List_of_musical_instruments
+Author maintains code to format copy/pasted data;
+please ask for link to gist
+"""
+
 instrument_list = [
     {
         "classification": "percussion",
