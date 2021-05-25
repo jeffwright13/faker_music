@@ -33,10 +33,11 @@ pip install faker_music
 From source code:
 
 ``` bash
-git clone <faker_music_repo> <local_dir>
-cd <local_dir>
+git clone <faker_music_repo>
+cd faker_music
 pip install --upgrade pip setuptools wheel
 python setup.py sdist bdist_wheel
+
 cd dist
 pip install --no-index <wheelfile>
   or
