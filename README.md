@@ -24,29 +24,53 @@ For future implementation:
 
 ## Installation
 
-***Note: you must have the [Faker](https://pypi.org/project/Faker/) module already installed.***
+From PyPi:
 
-Install with pip:
 ``` bash
 pip install faker_music
 ```
 
+From source code:
+
+``` bash
+git clone <faker_music_repo> <local_dir>
+cd <local_dir>
+pip install --upgrade pip setuptools wheel
+python setup.py sdist bdist_wheel
+cd dist
+pip install --no-index <wheelfile>
+  or
+pip install <tarball>
+
+    (e.g. pip install ubemsapi-1.1.6-py3-none-any.whl
+    (e.g. pip install ubemsapi-1.1.6.tar.gz)
+```
+
+
+## Execution
+
+Set up an environment with required modules (incuding the [Faker](https://pypi.org/project/Faker/) module):
+``` bash
+pip install -r requirements.txt
+```
+
 Add as a provider to your Faker instance:
 ``` python
-from faker import Faker
-from faker_music import MusicProvider
-fake = Faker()
-fake.add_provider(MusicProvider)
+>>>from faker import Faker
+>>>from faker_music import MusicProvider
+>>>fake = Faker()
+>>>fake.add_provider(MusicProvider)
 ```
 
 Now you can start to generate data:
 ```python
-fake.music_genre()
-fake.music_subgenre()
-etc...
+>>>fake.music_genre()
+>>>fake.music_subgenre()
+>>>fake.music_instrument()
+>>>fake.music_instrument_category()
 ```
 
-## About the Music Genre Object
+## About faker_music Objects
 
 The `music_genre_object` is a dictionary consisting of a 'genre' string, and an associated 'subgenre' list. The purpose is to provide data that ties together a given genre with all of it known subgenres.
 
@@ -54,8 +78,10 @@ For example:
 
 ``` python
 >>> fake.music_genre_object()
+
 {'genre': 'Singer/Songwriter',
- 'subgenres': ['Alternative Folk',
+ 'subgenres': [
+  'Alternative Folk',
   'Contemporary Folk',
   'Contemporary Singer/Songwriter',
   'Indie Folk',
@@ -65,7 +91,28 @@ For example:
   'Traditional Folk']}
 ```
 
-## Generating Genre Data
+Similarly, The `music_instrument_object` is a dictionary consisting of an instrument 'category' string, and an associated 'instrument' list. The purpose is to provide data that ties together a given caegory with all of it known instruments.
 
-The original data for this project (stored in `genres.py`) was lifted from https://www.musicgenreslist.com, and massaged into a format suitable for coding using `parser.py`, stored in [this Gist](https://gist.github.com/jeffwright13/ded48a18ba6db7feb47eea5892665d86).
+For example:
 
+``` python
+>>> fake.music_instrument_object()
+
+{'category': 'electronics',
+ 'instruments': [
+  'Drum machine',
+  'Electric guitar',
+  'Keyboard',
+  'Synthesizer',
+  'Theremin',
+  'Turntable']}
+```
+
+## Data Sources
+
+Original data for this project (stored in `genres.py`, `instruments.py`) was lifted from https://www.musicgenreslist.com and [Wikipedia](https://simple.wikipedia.org/wiki/List_of_musical_instruments), and massaged into a format suitable for coding using the `genre_parser.py` and `instrument_parser.py` code [found here](https://gist.github.com/jeffwright13/ded48a18ba6db7feb47eea5892665d86).
+
+## Acknowlegements
+
+- I would like to thank the maintainer of the [faker_airtravel](https://github.com/dkotschessa/faker_airtravel/) repository, since I used its structure to create this one.
+- Big thanks also to [Bob Belderbos](https://github.com/bbelderbos) for his expert guidance in getting this litte project off the ground.
