@@ -35,27 +35,10 @@ From source code:
 
 ``` bash
 git clone <faker_music_repo>
-cd faker_music
-pip install --upgrade pip setuptools wheel
-python setup.py sdist bdist_wheel
-
-cd dist
-pip install -r requirements.txt
-
-pip install --no-index <wheelfile>
-    (e.g. pip install faker_music-0.4-py3-none-any.whl)
-  --or--
-pip install <tarball>
-    (e.g. pip install faker_music-0.4.tar.gz)
+cd faker_music && python setup.py install
 ```
-
 
 ## Execution
-
-Set up an environment with required modules (incuding the [Faker](https://pypi.org/project/Faker/) module):
-``` bash
-pip install -r requirements.txt
-```
 
 Add as a provider to your Faker instance:
 ``` python
