@@ -27,7 +27,6 @@ For future implementation:
 From PyPi:
 
 ``` bash
-pip install -r requirements.txt
 pip install faker_music
 ```
 
