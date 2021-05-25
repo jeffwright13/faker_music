@@ -46,7 +46,7 @@ pip install --no-index <wheelfile>
     (e.g. pip install faker_music-0.4-py3-none-any.whl)
   --or--
 pip install <tarball>
-    (e.g. pip install faker_music-0.4.gz)
+    (e.g. pip install faker_music-0.4.tar.gz)
 ```
 
 
