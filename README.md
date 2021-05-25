@@ -27,6 +27,7 @@ For future implementation:
 From PyPi:
 
 ``` bash
+pip install -r requirements.txt
 pip install faker_music
 ```
 
@@ -39,11 +40,13 @@ pip install --upgrade pip setuptools wheel
 python setup.py sdist bdist_wheel
 
 cd dist
+pip install -r requirements.txt
+
 pip install --no-index <wheelfile>
-  or
+    (e.g. pip install faker_music-0.4-py3-none-any.whl)
+  --or--
 pip install <tarball>
-    (e.g. pip install ubemsapi-1.1.6-py3-none-any.whl
-    (e.g. pip install ubemsapi-1.1.6.tar.gz)
+    (e.g. pip install faker_music-0.4.gz)
 ```
 
 
