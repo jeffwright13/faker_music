@@ -1,1 +1,0 @@
-pip install ipython black pylint pyflakes tox tox-pyenv pytest pytest-cov Faker
