@@ -42,7 +42,6 @@ cd dist
 pip install --no-index <wheelfile>
   or
 pip install <tarball>
-
     (e.g. pip install ubemsapi-1.1.6-py3-none-any.whl
     (e.g. pip install ubemsapi-1.1.6.tar.gz)
 ```
@@ -57,18 +56,18 @@ pip install -r requirements.txt
 
 Add as a provider to your Faker instance:
 ``` python
->>>from faker import Faker
->>>from faker_music import MusicProvider
->>>fake = Faker()
->>>fake.add_provider(MusicProvider)
+>>> from faker import Faker
+>>> from faker_music import MusicProvider
+>>> fake = Faker()
+>>> fake.add_provider(MusicProvider)
 ```
 
 Now you can start to generate data:
 ```python
->>>fake.music_genre()
->>>fake.music_subgenre()
->>>fake.music_instrument()
->>>fake.music_instrument_category()
+>>> fake.music_genre()
+>>> fake.music_subgenre()
+>>> fake.music_instrument()
+>>> fake.music_instrument_category()
 ```
 
 ## About faker_music Objects
