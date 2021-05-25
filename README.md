@@ -34,7 +34,7 @@ pip install faker_music
 From source code:
 
 ``` bash
-git clone <faker_music_repo>
+git clone https://github.com/jeffwright13/faker_music/
 cd faker_music && python setup.py install
 ```
 
