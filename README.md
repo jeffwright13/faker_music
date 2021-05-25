@@ -10,13 +10,13 @@ No claims are made as to the accuracy or completeness of this data. However, sug
 
 Currently implemented:
 - Music genres
-
-Coming soon:
 - Musical instruments
 
-For future implementation:
+Coming soon:
 - Composers
 - Performers
+
+For future implementation:
 - Band names (existing)
 - Fake band name generator
 - Theory (notes/scales/chord-types/progressions)
