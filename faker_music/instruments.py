@@ -3,7 +3,7 @@ Raw data for faker_music module (music.py) to mine from.
 Data is presented in one big list of dicts, each dict
 corresponding to a "instrument object":
 {
-    "classification": "<category>",
+    "category": "<category>",
     "instruments": [
         "<instrument1>",
         "<instrument2>",
@@ -20,7 +20,7 @@ please ask for link to gist
 
 instrument_list = [
     {
-        "classification": "percussion",
+        "category": "percussion",
         "instruments": [
             "Aburukuwa",
             "Acme siren",
@@ -364,7 +364,7 @@ instrument_list = [
         ],
     },
     {
-        "classification": "winds",
+        "category": "winds",
         "instruments": [
             "Accordina (instrument)",
             "Accordion",
@@ -634,7 +634,7 @@ instrument_list = [
         ],
     },
     {
-        "classification": "strings",
+        "category": "strings",
         "instruments": [
             "Adungu",
             "Aeolian harp",
@@ -879,7 +879,7 @@ instrument_list = [
         ],
     },
     {
-        "classification": "electronics",
+        "category": "electronics",
         "instruments": [
             "AlphaSphere",
             "Audiocubes",

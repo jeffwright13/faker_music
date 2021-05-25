@@ -56,13 +56,13 @@ class MusicProvider(BaseProvider):
     def music_instrument_object(self):
         """
         Returns a randomly-chosen instrument dictionary. This is a
-        dictionary whose first key is 'classification', a string;
+        dictionary whose first key is 'category', a string;
         and whose second key, "instruments", refers to a list of
         instruments in that category.
 
         Example:
         {
-             "classification": "electronics",
+             "category": "electronics",
              "instruments": [
                  "Drum machine",
                  "Electric piano",
@@ -79,9 +79,9 @@ class MusicProvider(BaseProvider):
         my_choice = choice(instrument_list)
         return choice(my_choice["instruments"])
 
-    def music_instrument_classification(self):
+    def music_instrument_category(self):
         """
-        Returns a instrument classification in string format.
+        Returns an instrument category in string format.
         """
         my_choice = choice(instrument_list)
-        return my_choice["classification"]
+        return my_choice["category"]
