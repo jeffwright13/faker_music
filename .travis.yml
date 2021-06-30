@@ -11,7 +11,8 @@ before_install:
   - pip install codecov
 install:
   - pip install -r requirements.txt
-  - pip install ".[test]" . # install package + test dependencies
-script: pytest # run tests
+  - pip install ".[test]" . 
+  - pip install pytest-travis-fold
+script: pytest 
 after_success:
-  - codecov # submit coverage
+  - codecov
